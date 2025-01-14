@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
+  name: kubernetes-bootcamp-pod
 spec:
   containers:
-  - name: nginx
-    image: nginx:1.14.2
+  - name: kubernetes-bootcamp-pod
+    image:gcr.io/google-samples/kubernetes-bootcamp:v1
     ports:
-    - containerPort: 80
+    - containerPort: 8080
